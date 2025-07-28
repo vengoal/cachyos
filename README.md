@@ -2,19 +2,20 @@
 package installation command
 + flatpak
   <code>
-  sudo pacman -S flatpak
+  pacman -S flatpak
   </code>
 + net-tools
   <code>
-  sudo pacman -S net-tools</code>
+  pacman -S net-tools</code>
 + openssh
   <code>
-  sudo pacman -S openssh
-  sudo systemctl enable sshd.service
-  sudo systemctl start  sshd.service        
+  pacman -S openssh
+  systemctl enable sshd.service
+  systemctl start  sshd.service        
   </code>
 + Chrome
   <code>
-  sudo flatpak install com.google.Chrome
-  sudo flatpak update  com,google.Chrome
+  flatpak install com.google.Chrome
+  flatpak update  com.google.Chrome
+  flatpak uninstall com.google.Chrome
   </code>
