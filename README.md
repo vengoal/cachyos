@@ -1,5 +1,9 @@
 # cachyos
 package installation command
++ yay
+  <code>
+  pacman -S yay
+  </code>
 + flatpak
   <code>
   pacman -S flatpak
@@ -21,5 +25,6 @@ package installation command
   </code>
 + timeshift
   <code>
-  pacman -S timeshift timeshift-autosnap grub-btrfs
+  pacman -S timeshift grub-btrfs
+  yay -S timeshift-autosnap
   </code>
