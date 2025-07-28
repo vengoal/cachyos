@@ -21,5 +21,5 @@ package installation command
   </code>
 + timeshift
   <code>
-  pacman -S timeshift timeshift-autosnap grub-btrfsd
+  pacman -S timeshift timeshift-autosnap grub-btrfs
   </code>
