@@ -28,3 +28,7 @@ package installation command
   pacman -S timeshift grub-btrfs
   yay -S timeshift-autosnap
   </code>
++ filezilla
+  <code>
+  sudo pacman -S filezilla
+  </code>
