@@ -19,3 +19,7 @@ package installation command
   flatpak update  com.google.Chrome
   flatpak uninstall com.google.Chrome
   </code>
++ timeshift
+  <code>
+  pacman -S timeshift timeshift-autosnap grub-btrfsd
+  </code>
