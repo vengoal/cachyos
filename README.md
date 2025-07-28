@@ -1,0 +1,2 @@
+# cachyos
+package installation command
