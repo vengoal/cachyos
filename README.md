@@ -13,3 +13,8 @@ package installation command
   sudo systemctl enable sshd.service
   sudo systemctl start  sshd.service        
   </code>
++ Chrome
+  <code>
+  sudo flatpak install com.google.Chrome
+  sudo flatpak update  com,google.Chrome
+  </code>
