@@ -1,5 +1,9 @@
 # cachyos
 package installation command
++ flatpak
+  <code>
+  sudo pacman -S flatpak
+  </code>
 + net-tools
   <code>
   sudo pacman -S net-tools</code>
