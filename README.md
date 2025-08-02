@@ -34,3 +34,7 @@ package installation command
   <code>
   sudo pacman -S filezilla
   </code>
++ onlyoffice
+  <code>
+  sudo pacman -S onlyoffice
+  </code>
