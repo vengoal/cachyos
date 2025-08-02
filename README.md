@@ -26,6 +26,8 @@ package installation command
 + timeshift
   <code>
   pacman -S timeshift grub-btrfs
+  sudo systemctl enable grub-btrfsd
+  sudo systemctl start grub-btrfsd
   yay -S timeshift-autosnap
   </code>
 + filezilla
