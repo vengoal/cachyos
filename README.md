@@ -1,4 +1,14 @@
 # cachyos
+systemctl command usage:
++ systemctl enable [服務].service：使某服務自動啟動
++ systemctl disable [服務].service：使某服務不自動啟動
++ systemctl status [服務].service：服務詳細信息
++ systemctl is-active [服務].service：顯示是否啟動
++ systemctl list-units -- type =service：顯示所有已啟動的服務
++ systemctl start [服務].service：啟動某服務
++ systemctl stop [服務].service：停止某服務
++ systemctl restart [服務].service：重啟某服務
+
 package installation command
 + yay
   <code>
