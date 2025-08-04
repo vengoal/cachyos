@@ -2,13 +2,13 @@
 ## systemctl command usage:
 systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指令。 它可以管理系統服務、目標、裝置、掛載點等各種systemd 單位。 透過 systemctl，您可以啟動、停止、重啟、啟用、禁用服務，以及查詢服務狀態等等。
 以下是一些常用的 systemctl 指令：
-啟動/停止/重啟服務:
-<ul>
-<li>systemctl start [服務名稱]: 啟動指定的服務。</li>
-<li>systemctl stop [服務名稱]: 停止指定的服務。</li>
-<li>systemctl restart [服務名稱]: 重啟指定的服務。</li>
-<li>systemctl reload [服務名稱]: 重新載入指定服務的設定檔。</li>
-</ul>
++ 啟動/停止/重啟服務:
++
+systemctl start [服務名稱]: 啟動指定的服務。
+systemctl stop [服務名稱]: 停止指定的服務。
+systemctl restart [服務名稱]: 重啟指定的服務。
+systemctl reload [服務名稱]: 重新載入指定服務的設定檔。
+
 + 設定開機啟動/禁用:
 systemctl enable [服務名稱]: 設定指定服務在開機時自動啟動。
 systemctl disable [服務名稱]: 取消指定服務的開機自動啟動。
