@@ -17,7 +17,19 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 + systemctl is-enabled [服務名稱]: 檢查指定服務是否已啟用(在開機時自動啟動)。
 #### 其他常用指令:
 + systemctl list-units --type=service: 列出所有已啟動的服務。
-+ systemctl list-units --type service --all: 列出系統上所有的服務單位(包含作用中與停用)。
++ systemctl list-units --type=service --all: 列出系統上所有的服務單位(包含作用中與停用)。
+  - list-units type:
+     - automount：提供可視需要掛載檔案系統和平行啟動功能的自動掛載功能。
+     - mount：控制檔案系統目前日期與時間顯示中的掛載點。
+     - path：當檔案系統路徑資訊變更時，可以啟動服務。
+     - scope：與服務單位類似，但管理外部處理，而非啟動它們。
+     - service：啟動及控制常駐程式及其組成的程序。
+     - slice：用來將階層 cgroup 樹狀結構中的系統程序 (例如服務單位和範圍單位) 分組，以供資源管理之用。
+     - socket：封裝系統中的本機處理作業間通訊 (IPC) 或網路通訊端，這對於以通訊端為基礎的啟用很有用。
+     - target：用於群組單元，或在啟動期間提供已知的同步化點。
+     - timer：用來使用計時器觸發其他單位的啟動。這些提供先前可以使用 cron 服務管理的作業替代方式。
+     - device：公開 systemd 中的核心裝置，也可用來實作裝置基礎啟用。
+     - swap：封裝記憶體交換分割區或交換檔案。
 + systemctl list-unit-files --type=service: 列出所有服務及其開機啟動狀態。
 + systemctl mask [服務名稱]: 阻止服務啟動，即使設定為開機啟動也無效。
 + systemctl unmask [服務名稱]: 取消mask 狀態。
