@@ -48,6 +48,10 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
   <code>
   pacman -S yay
   </code>
++ RustDesk
+  <code>
+  yay -S rustdesk-bin
+  </code>
 + flatpak
   <code>
   pacman -S flatpak
@@ -81,8 +85,4 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 + onlyoffice
   <code>
   sudo pacman -S onlyoffice
-  </code>
-＋ RustDesk
-  <code>
-  yay -S rustdesk-bin
   </code>
