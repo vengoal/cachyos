@@ -41,6 +41,8 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 + 設定SSH 服務開機啟動: systemctl enable sshd.service
 + 檢查MySQL 服務狀態: systemctl status mysql.service
 + 關閉防火牆服務: systemctl stop firewalld.service
++ 啟動防火牆服務: systemctl start ufw.service
++ 關閉防火牆服務: systemctl stop  ufw.service
 + 重新載入所有設定檔: systemctl daemon-reload
 
 ## package installation command
