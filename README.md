@@ -82,3 +82,7 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
   <code>
   sudo pacman -S onlyoffice
   </code>
+＋ RustDesk
+  <code>
+  yay -S rustdesk-bin
+  </code>
