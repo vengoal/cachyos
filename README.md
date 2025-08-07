@@ -89,6 +89,20 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
   generate key and upload public key to server to bypass password input
     ssh-keygen -t ed25519
     ssh-copy-id user@serverip
+
+  set sshfs aotomount:
+  sudo nano /etc/fstab
+  append following line and replace 'user' as your own:
+  user@192.168.88.15:/shared_folder /mnt/shared fuse.sshfs noauto,x-systemd.automount,_netdev,reconnect,IdentityFile=/home/user/.ssh/id_ed25519,allow_other,uid=1000,gid=1000 0 0
+
+  reload fstab and start automount
+  sudo systemctl daemon-reload
+  sudo systemctl restart remote-fs.target
+  systemctl list-units --type=automount | grep shared
+  sudo systemctl start mnt-shared.automount
+  sudo systemctl enable mnt-shared.automount
+  df
+  reboot
   </code>
 + Chrome
   <code>
