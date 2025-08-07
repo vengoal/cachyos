@@ -78,6 +78,7 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
     sudo chmod 700 /shared_folder
 
   client steps:
+  make sure openssh installed and sshd.service started.
     sudo pacman -S nfs-utils
     sudo pacman -S sshfs
     sshfs --version
