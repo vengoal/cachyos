@@ -78,11 +78,13 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
     sudo chmod 700 /shared_folder
 
   client steps:
+    sudo pacman -S nfs-utils
     sudo pacman -S sshfs
     sshfs --version
     sudo mkdir -p /mnt/shared
     sudo chmod 777 /mnt/shared/
     sshfs user@server-ip:/shared_folder /mnt/shared
+    df -h
 
   generate key and upload public key to server to bypass password input
     ssh-keygen -t ed25519
