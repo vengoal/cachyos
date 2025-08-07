@@ -81,6 +81,7 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
   sudo pacman -S sshfs
   sshfs --version
   sudo mkdir -p /mnt/shared
+  sudo chmod 777 /mnt/shared/
   sshfs user@server-ip:/shared_folder /mnt/shared
   </code>
 + Chrome
