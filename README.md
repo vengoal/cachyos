@@ -61,7 +61,7 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
     <code>PermitRootLogin no</code>
   - Save and exit (Ctrl+O → Enter → Ctrl+X in nano).
   - Restart SSH Service
-  <code>sudo systemctl restart sshd</code>
+    <code>sudo systemctl restart sshd</code>
   
   
 ## package installation command
