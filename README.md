@@ -47,11 +47,14 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 
 
 ## Security
-+ Set the "immutable" attribute (prevents deletion/modification)
++ The "immutable" attribute (prevents deletion/modification)
+  <code>
+  set:
   sudo chattr +i filename
-+ To unset
+  unset:
   sudo chattr -i filename
-
+  </code>
+  
 ## package installation command
 + yay
   <code>
