@@ -45,6 +45,13 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 + 關閉防火牆服務: systemctl stop  ufw.service
 + 重新載入所有設定檔: systemctl daemon-reload
 
+
+## Security
++ Set the "immutable" attribute (prevents deletion/modification)
+  sudo chattr +i filename
++ To unset
+  sudo chattr -i filename
+
 ## package installation command
 + yay
   <code>
