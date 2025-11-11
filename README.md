@@ -56,11 +56,12 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 + Disable SSH remote login for the root user
   - <code>sudo nano /etc/ssh/sshd_config</code>
   - Change this line
-    #PermitRootLogin yes
+    <code>#PermitRootLogin yes</code>
     to
     <code>PermitRootLogin no</code>
   - Save and exit (Ctrl+O → Enter → Ctrl+X in nano).
   - Restart SSH Service
+    
     <code>sudo systemctl restart sshd</code>
   
   
