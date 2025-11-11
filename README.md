@@ -54,6 +54,16 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
   unset:
   sudo chattr -i filename
   </code>
+
++ Disable remote login for the root user
+  <code>
+  sudo nano /etc/ssh/sshd_config
+  Change this line
+  #PermitRootLogin yes
+  to
+  PermitRootLogin no
+  </code>
+
   
 ## package installation command
 + yay
