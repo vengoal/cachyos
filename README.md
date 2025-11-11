@@ -48,12 +48,10 @@ systemctl 是Linux 系統中用於控制systemd 系統和服務管理器的指�
 
 ## Security
 + The "immutable" attribute (prevents deletion/modification)
-  <code>
-  set:
-  sudo chattr +i filename
-  unset:
-  sudo chattr -i filename
-  </code>
+  - set:
+   <code>sudo chattr +i filename </code>
+  - unset:
+  <code>sudo chattr -i filename</code>
 
 + Disable SSH remote login for the root user
   <code>
